@@ -1,0 +1,42 @@
+#include <iostream.h>
+#include <conio.h>
+
+main()
+{
+ int arab[13]={1000, 900 , 500 , 400 , 100 , 90 ,50 ,40 , 10 ,9 ,5,4,1};
+ int liczba,ilosc;
+
+ do { cout<<"Podaj liczbe [1..3999] : "; cin>>liczba;
+	 }while ((liczba<1)||(liczba>3999));
+ cout<<"Liczba w Postaci Rzymskiej wynosi : ";
+
+ for (int i=0;i<=12;i++)
+	{
+	ilosc=liczba/arab[i];
+	liczba%=arab[i];
+
+	for (int j=1;j<=ilosc;j++)
+	  {
+		switch (i){
+		case 0:  {cout<<"M" ;break;}//1000
+		case 1:  {cout<<"CM";break;}//900
+		case 2:  {cout<<"D" ;break;}//500
+		case 3:  {cout<<"CD";break;}//400
+		case 4:  {cout<<"C" ;break;}//100
+		case 5:  {cout<<"XC";break;}//90
+		case 6:  {cout<<"L" ;break;}//50
+		case 7:  {cout<<"XL";break;}//40
+		case 8:  {cout<<"X" ;break;}//10
+		case 9:  {cout<<"IX";break;}//9
+		case 10: {cout<<"V" ;break;}//5
+		case 11: {cout<<"IV";break;}//4
+		case 12: {cout<<"I" ;break;}//1
+		}
+	  }
+	}
+getch();
+}
+
+
+
+
