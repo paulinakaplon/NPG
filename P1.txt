@@ -1,0 +1,48 @@
+#include <iostream>
+
+using namespace std;
+
+inline void swap(int &a, int &b)
+{ int c = a; a = b; b = c; }
+
+void out(char T[], int N)
+{
+   for(int i = 0; i < N; i++) printf("%c", T[i]); 
+   printf("\n"); 
+}
+
+void permutacje (char T[], int ix, int N) 
+{
+  if( ix < N-1 )
+  {
+    for(int i = ix; i < N; i++)
+    {
+      swap(T[ix], T[i]); 
+      permutacje(T, ix+1, N);
+      swap(T[ix], T[i]); 
+    }
+  }
+  else out(T, N); 
+}
+
+int main()
+{
+  int N,t;
+  scanf("%d", &t);
+  while(t--)
+  {
+    scanf("%d", &N);
+    char T[N];
+    
+    //tworze tablice pierwszych N liczb alfabetu, to dla nich bede wypisywal permutacje
+    for(int i=0; i<N; i++)
+    {
+      T[i]=97+i;
+    }
+    permutacje(T, 0, N);
+  }
+  
+  cout<<endl;  
+  system("pause");
+  return 0;
+}
