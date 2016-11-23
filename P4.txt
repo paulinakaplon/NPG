@@ -6,8 +6,8 @@ main()
  int arab[13]={1000, 900 , 500 , 400 , 100 , 90 ,50 ,40 , 10 ,9 ,5,4,1};
  int liczba,ilosc;
 
- do { cout<<"Podaj liczbe [1..3999] : "; cin>>liczba;
-	 }while ((liczba<1)||(liczba>3999));
+ do { cout<<"Podaj liczbe [1..3999] : "; cin>>liczbcfba;
+	 }while ((liczba<1)||(liczba>3999));nggggggggggggggggg
  cout<<"Liczba w Postaci Rzymskiej wynosi : ";
 
  for (int i=0;i<=12;i++)
