@@ -1,9 +1,8 @@
-111111111
+111111111rzewshgrdzh
 rgvfdkrujbgdfifidfjiksdjfskudjfkjusd
 sdfjyudsygucadss
 using namespace std;
-ghndftgdtf
-
+3535353gytgggg
 inline void swap(int &a, int &b)
 { int c = a; a = b; b = c; }
 
