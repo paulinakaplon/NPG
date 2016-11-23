@@ -1,7 +1,7 @@
-# include <iostream.h>
+dbfz# include <iostream.h>
 # include <stdlib.h>
 main()
-{
+{gnfzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 randomize();
 int l1,l2,typ;
 char ch='t';
